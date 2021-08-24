@@ -1,0 +1,37 @@
+<head></head>
+
+<body>
+    <div class="img"></div>
+</body>
+<style>
+    html, body{
+        /* Reset */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        /* 垂直水平置中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+    }
+
+    .img{
+        width: 600px;
+        height: 324px;
+        /* 定義背景圖案 */
+        background-image: url(https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1601349550377.jpg);
+        background-size: contain;
+        /* 變化的時間 */
+        transition: 0.5s;
+        /* 滑鼠在元件上時的樣式 */
+        cursor: pointer;
+    }
+    .img:hover{
+        /* 陰影設定 */
+        box-shadow: 5px 5px 60px rgba(0,0,0,0.5);
+        /* X,Y 偏移 */
+        transform: translate(-5px, -5px);
+    }
+</style>

@@ -1,0 +1,153 @@
+<head></head>
+
+<body>
+    <h1>搭早安</h1>
+    <h2 style="color: blue; text-align: right;">你說藍色是你最愛的顏色</h2>
+    <h3 style="letter-spacing: 10px;">人與人之間有點距離才美，字也是</h3>
+
+    <div class="button">上傳</div>
+    <div class="button">下載</div>
+    <div class="button sent">送出</div>
+
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+
+    <hr>
+
+    <div class="left">LEFT</div>
+    <div class="right">1</div>
+    <div class="right">2</div>
+    <div class="right">3</div>
+
+    <br><br>
+
+    <div class="Static">
+        <h4>Static</h4>
+        <div class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+    </div>
+    <div class="Relative">
+        <h4>Relative</h4>
+        <div class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+    </div>
+    <div class="Absolute">
+        <h4>Absolute</h4>
+        <div class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+    </div>
+    <div class="Fixed">
+        <h4>Fixed</h4>
+        <div class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+    </div>
+
+    <hr>
+    <h1>Flex</h1>
+    <a href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank">建議搭配 Dan 的程式碼補充服用</a>
+
+</body>
+
+<style>
+    .button {
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .sent {
+        background-color: #3489eb;
+        color: white;
+    }
+
+    .box-1 {
+        width: 100px;
+        height: 100px;
+        background-color: #666;
+        margin: 10px;
+        /* border: 10px solid; */
+    }
+
+    .box-2 {
+        width: 100px;
+        height: 100px;
+        background-color: #666;
+        margin: 10px;
+        border: 10px solid;
+        box-sizing: border-box;
+    }
+
+    .left {
+        float: left;
+        background-color: #eb8334;
+        padding: 10px;
+    }
+
+    .right {
+        float: right;
+        background-color: #eb8334;
+        padding: 10px;
+    }
+
+    .boxes .box {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+    }
+
+    .box.box1 {
+        background-color: blue;
+    }
+
+    .box.box2 {
+        background-color: red;
+    }
+
+    .box.box3 {
+        background-color: green;
+    }
+
+    .Static .box2 {
+        position: static;
+        left: 50px;
+        top: 50px;
+    }
+
+    .Relative .box2 {
+        position: relative;
+        left: 30px;
+        top: 30px;
+    }
+
+    .Absolute {
+        position: relative;
+    }
+
+    .Absolute .box2 {
+        /* 上層要是可以被定位的元素 */
+        position: absolute;
+        left: 150px;
+        top: 50px;
+    }
+
+    .Fixed .box2 {
+        position: fixed;
+        left: 450px;
+        bottom: 50px;
+    }
+</style>
